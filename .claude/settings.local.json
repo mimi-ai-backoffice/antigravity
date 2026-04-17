@@ -17,7 +17,10 @@
       "Bash(npx create-next-app@latest . --yes)",
       "Bash(npm install:*)",
       "Bash(npm run:*)",
-      "Bash(taskkill /PID 46564 /F)"
+      "Bash(taskkill /PID 46564 /F)",
+      "Bash(gh repo:*)",
+      "Bash(npx vercel:*)",
+      "WebSearch"
     ]
   }
 }
