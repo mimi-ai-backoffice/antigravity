@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(claude:*)",
+      "Bash(git --version)",
+      "Bash(where python:*)",
+      "Bash(where node:*)",
+      "Bash(where git:*)",
+      "Bash(C:\\\\Program Files\\\\nodejs\\\\node.exe:*)",
+      "Bash(C:\\\\Users\\\\mimim\\\\AppData\\\\Local\\\\Microsoft\\\\WindowsApps\\\\python.exe:*)",
+      "Bash(winget install:*)",
+      "Bash(py:*)",
+      "Bash(cmd:*)",
+      "Bash(powershell:*)",
+      "Bash(C:\\\\Users\\\\mimim\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python313\\\\python.exe:*)",
+      "Bash(npx create-next-app@latest . --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --no-turbopack)",
+      "Bash(npx create-next-app@latest . --yes)",
+      "Bash(npm install:*)",
+      "Bash(npm run:*)",
+      "Bash(taskkill /PID 46564 /F)"
+    ]
+  }
+}

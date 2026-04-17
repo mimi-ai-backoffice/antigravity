@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-8px) rotate(3deg); }
+}
+
+@keyframes pop {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.4); }
+  100% { transform: scale(0); opacity: 0; }
+}
+
+@keyframes fall {
+  from { transform: translateY(-40px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(-6px); }
+  40% { transform: translateX(6px); }
+  60% { transform: translateX(-4px); }
+  80% { transform: translateX(4px); }
+}
+
+@keyframes sparkle {
+  0% { opacity: 0; transform: scale(0) rotate(0deg); }
+  50% { opacity: 1; transform: scale(1.2) rotate(180deg); }
+  100% { opacity: 0; transform: scale(0) rotate(360deg); }
+}
+
+@keyframes rainbow {
+  0% { filter: hue-rotate(0deg); }
+  100% { filter: hue-rotate(360deg); }
+}
+
+@keyframes bounce-in {
+  0% { transform: scale(0.3); opacity: 0; }
+  50% { transform: scale(1.1); }
+  70% { transform: scale(0.9); }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes slide-up {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes glow-pulse {
+  0%, 100% { box-shadow: 0 0 10px rgba(255, 100, 200, 0.5), 0 0 20px rgba(150, 100, 255, 0.3); }
+  50% { box-shadow: 0 0 20px rgba(255, 100, 200, 0.8), 0 0 40px rgba(150, 100, 255, 0.6); }
+}
+
+.animate-float { animation: float 3s ease-in-out infinite; }
+.animate-pop { animation: pop 0.4s ease-out forwards; }
+.animate-fall { animation: fall 0.2s ease-out; }
+.animate-shake { animation: shake 0.4s ease-in-out; }
+.animate-sparkle { animation: sparkle 0.6s ease-out forwards; }
+.animate-rainbow { animation: rainbow 3s linear infinite; }
+.animate-bounce-in { animation: bounce-in 0.5s ease-out; }
+.animate-slide-up { animation: slide-up 0.3s ease-out; }
+.animate-glow-pulse { animation: glow-pulse 2s ease-in-out infinite; }
+
+/* ホログラム風グラデーション */
+.holographic {
+  background: linear-gradient(135deg,
+    #ff9de2, #ffb3ff, #c8b3ff, #a0d4ff,
+    #a0ffef, #ffffa0, #ffcba0, #ff9de2);
+  background-size: 400% 400%;
+  animation: rainbow-shift 4s ease infinite;
+}
+
+@keyframes rainbow-shift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
